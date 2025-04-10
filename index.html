@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reels Style Video</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .video-container {
+      position: relative;
+      width: 360px;
+      height: 640px;
+      overflow: hidden;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .play-button,
+    .continue-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .continue-button {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="video-container">
+  <video id="reelsVideo" src="document_6323374075230033065.mp4"></video>
+
+  <button class="play-button" id="playBtn">▶ Play</button>
+  <button class="continue-button" id="continueBtn">Continue</button>
+</div>
+
+<script>
+  const video = document.getElementById('reelsVideo');
+  const playBtn = document.getElementById('playBtn');
+  const continueBtn = document.getElementById('continueBtn');
+
+  playBtn.addEventListener('click', () => {
+    video.play();
+    playBtn.style.display = 'none';
+  });
+
+  video.addEventListener('ended', () => {
+    continueBtn.style.display = 'block';
+  });
+
+  continueBtn.addEventListener('click', () => {
+    window.location.href = 'https://www.profitableratecpm.com/e3nnyxig?key=3ee75b9327425fd5d36be64a6836835c';
+  });
+</script>
+
+</body>
+</html>
